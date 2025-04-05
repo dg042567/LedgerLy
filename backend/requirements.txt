@@ -2,4 +2,5 @@ Flask
 supabase
 flask-cors
 dotenv
-uvicorn
+uvicorn[standard]
+fastapi
