@@ -8,7 +8,7 @@ from streamlit.components.v1 import html
 
 # Load environment variables
 load_dotenv()
-API_URL = os.getenv("API_URL") or "http://localhost:5000"
+API_URL = "https://ledgerly-cyxk.onrender.com"
 
 # Page Configuration
 st.set_page_config(
