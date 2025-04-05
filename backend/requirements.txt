@@ -2,3 +2,4 @@ Flask
 supabase
 flask-cors
 dotenv
+uvicorn
