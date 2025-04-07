@@ -12,7 +12,7 @@ API_URL = "https://ledgerly-cyxk.onrender.com"
 
 # Page Configuration
 st.set_page_config(
-    page_title="Cloud Expense Tracker",
+    page_title="LedgerLy",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -42,7 +42,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header Section
-st.title("Cloud Expense Tracker")
+st.title("LedgerLy")
 st.caption("Track and visualize your expenses with ease.")
 
 # Layout Split
@@ -54,7 +54,7 @@ with col_form:
     with st.form("entry_form", clear_on_submit=True):
         title = st.text_input("Expense Title")
         amount = st.number_input("Amount (USD)", min_value=0.01, step=0.01)
-        category = st.selectbox("Category", ["Food", "Transport", "Bills", "Shopping", "Other"])
+        category = st.selectbox("Category", ["Food", "Transport", "Bills", "Shopping","Clothes", "Other"])
         submitted = st.form_submit_button("Add Expense")
 
         if submitted:
